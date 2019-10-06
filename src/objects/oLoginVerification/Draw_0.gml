@@ -3,6 +3,7 @@
 
 draw_set_color(c_white);
 if (msg != "") {
+	draw_set_halign(fa_center);
 	switch (msg) {
 		case "Username does not exist":
 			draw_set_color(c_red);
@@ -17,4 +18,5 @@ if (msg != "") {
 			break;
 	}
 	draw_text(x,y,msg)
+	draw_set_halign(fa_left);
 }

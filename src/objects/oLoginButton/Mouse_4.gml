@@ -4,4 +4,5 @@
 var username = oUsernameInput.input;
 var password = oPasswordInput.input;
 
+oLoginVerification.msg = "";
 emit_login(username, password)

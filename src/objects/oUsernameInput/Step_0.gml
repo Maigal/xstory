@@ -6,7 +6,7 @@
 if (focus = true)
    {
      //if is focused, check for user hitting enter to stop input
-     if (keyboard_check_pressed(vk_enter))
+     if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed (vk_tab))
          {
            //stop focus on player hitting enter
               focus = false;

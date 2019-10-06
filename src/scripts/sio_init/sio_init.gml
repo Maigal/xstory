@@ -12,4 +12,6 @@ gml_pragma("global", "sio_init()");
 	//sio_addEvent("pong");
 	sio_addEvent("client_id");
 	sio_addEvent("login");
+	sio_addEvent("login_failure");
+	sio_addEvent("status");
 #endregion
