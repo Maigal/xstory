@@ -1,10 +1,10 @@
 {
-    "id": "9ec1b226-5c31-4c39-8c86-b0210daa8708",
+    "id": "700919fd-fa80-42db-afcd-c91dce492c20",
     "modelName": "GMFolder",
     "mvc": "1.1",
-    "name": "9ec1b226-5c31-4c39-8c86-b0210daa8708",
+    "name": "700919fd-fa80-42db-afcd-c91dce492c20",
     "children": [
-        "82137e3a-8558-4960-87e8-5d9a63ac66b1"
+        "506682d7-489c-4355-9f41-4de953e56998"
     ],
     "filterType": "GMScript",
     "folderName": "scripts",

@@ -8,7 +8,7 @@ if (msg != "") {
 			draw_set_color(c_red);
 			break;
 			
-		case "Password is incorrect":
+		case "Invalid password":
 			draw_set_color(c_red);
 			break;
 			
@@ -16,4 +16,5 @@ if (msg != "") {
 			draw_set_color(c_green);
 			break;
 	}
+	draw_text(x,y,msg)
 }

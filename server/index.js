@@ -37,10 +37,10 @@ io.on('connection', (client) => {
         if (dbUser.password === loginData.password) {
           console.log('todo correcto')
         } else {
-          console.log('password incorrecta')
+          client.emit("login_failure", "Invalid password");
         }
       } else {
-        console.log('username incorrecto')
+        client.emit("login_failure", "Username does not exist");
       }
       //client.emit("login", data);
     });
