@@ -3,7 +3,7 @@ class Player{
   constructor(data){
      this.id = data.id;
      this.username = data.username;
-     this.map = data.map;
+     this.room = data.room;
      this.x = data.x;
      this.y = data.y;
      this.socket = data.socket

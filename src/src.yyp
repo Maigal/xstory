@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "2c9aac52-42b8-4260-9ac2-b83bf30f9c0b",
+            "Value": {
+                "id": "6356d46b-7282-4a1c-b349-7032c75a1f56",
+                "resourcePath": "scripts\\emit_room_created\\emit_room_created.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3d21e2b8-e910-4263-803e-b155d050e551",
             "Value": {
                 "id": "9c5e7439-5c84-47bb-8169-501ab198e598",
@@ -236,6 +244,14 @@
                 "id": "28df0be0-b369-47a8-baeb-0abbf055db6a",
                 "resourcePath": "options\\tvos\\options_tvos.yy",
                 "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
+            "Key": "94ebc965-64bb-41d2-a87e-5c68066f4ecd",
+            "Value": {
+                "id": "aeb687a2-2e30-482a-b386-cb58e33b0c39",
+                "resourcePath": "objects\\oPlayerOther\\oPlayerOther.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -399,6 +415,22 @@
             }
         },
         {
+            "Key": "edceeba8-489d-4937-a0b1-59136e48d2e9",
+            "Value": {
+                "id": "2db57186-31ed-4a45-bf01-57371e4cc02e",
+                "resourcePath": "sprites\\PlayerOther\\PlayerOther.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eeb6dce3-bd0e-4415-8272-00adcbcebd72",
+            "Value": {
+                "id": "5191edfa-80fc-4595-b516-b84348ad510a",
+                "resourcePath": "scripts\\gmcallback_sio_on_create_player_other\\gmcallback_sio_on_create_player_other.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1879f02-f16d-4e05-8222-c4595c2710af",
             "Value": {
                 "id": "d8a856f1-dd0e-4e19-899f-b2c42bd967c1",
@@ -451,11 +483,13 @@
         "1318a44b-1ead-47fe-b264-3a4762fcbc5a",
         "b33be31f-e47d-464a-ab73-85b7083a813f",
         "ebdfabbd-267a-4ab6-9bc5-df515e4c726a",
+        "2c9aac52-42b8-4260-9ac2-b83bf30f9c0b",
         "70f86fba-065c-4118-8766-f523a9944c78",
         "8ae24585-7f81-4009-aed6-4777c3f0cbd0",
         "50531ae2-22e0-48a8-b6c6-213673ece4b1",
         "7c3e8da4-1ce0-4399-9a61-b5054a612492",
-        "f1879f02-f16d-4e05-8222-c4595c2710af"
+        "f1879f02-f16d-4e05-8222-c4595c2710af",
+        "eeb6dce3-bd0e-4415-8272-00adcbcebd72"
     ],
     "tutorial": ""
 }

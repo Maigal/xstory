@@ -3,22 +3,26 @@
     {
       "id": 0,
       "username": "mati",
-      "password": "test",
-      "location": {
-        "map": "roomTest1",
-        "x": "200",
-        "y": "200"
-      }
+      "password": "a",
+      "room": "roomTest1",
+      "x": "200",
+      "y": "200"
     },
     {
       "id": 1,
       "username": "juan",
-      "password": "test",
-      "location": {
-        "map": "roomTest2",
-        "x": "300",
-        "y": "300"
-      }
+      "password": "a",
+      "room": "roomTest1",
+      "x": "300",
+      "y": "300"
+    },
+    {
+      "id": 2,
+      "username": "a",
+      "password": "a",
+      "room": "roomTest1",
+      "x": "500",
+      "y": "300"
     }
   ]
 }
