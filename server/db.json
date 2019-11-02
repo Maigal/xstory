@@ -2,16 +2,16 @@
   "users": [
     {
       "id": 0,
-      "username": "mati",
-      "password": "a",
+      "username": "b",
+      "password": "b",
       "room": "roomTest1",
       "x": "200",
       "y": "200"
     },
     {
       "id": 1,
-      "username": "juan",
-      "password": "a",
+      "username": "c",
+      "password": "c",
       "room": "roomTest1",
       "x": "300",
       "y": "300"

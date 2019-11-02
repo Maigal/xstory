@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "d838281a-449b-408d-8ca5-6e476629c1aa",
+            "Value": {
+                "id": "c8848039-e35f-462d-89c2-b8efa7a53bd7",
+                "resourcePath": "scripts\\emit_join_room\\emit_join_room.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dfe925ae-0c67-45bb-add6-53ab49a03861",
             "Value": {
                 "id": "f336246f-6fb6-4b8b-b0c0-73a3bb040b33",
@@ -484,6 +492,7 @@
         "b33be31f-e47d-464a-ab73-85b7083a813f",
         "ebdfabbd-267a-4ab6-9bc5-df515e4c726a",
         "2c9aac52-42b8-4260-9ac2-b83bf30f9c0b",
+        "d838281a-449b-408d-8ca5-6e476629c1aa",
         "70f86fba-065c-4118-8766-f523a9944c78",
         "8ae24585-7f81-4009-aed6-4777c3f0cbd0",
         "50531ae2-22e0-48a8-b6c6-213673ece4b1",

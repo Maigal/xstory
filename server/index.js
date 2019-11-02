@@ -2,6 +2,7 @@ const PORT = 3000;
 const Player = require('./Classes/Player');
 const onLogin = require('./Events/Login');
 const onDisconnect = require('./Events/Disconnect');
+const onJoinRoom = require('./Events/JoinRoom');
 const server = require('http').createServer();
 const io = require('socket.io')(server);
 
@@ -24,7 +25,9 @@ io.on('connection', (client) => {
 
     var player;
 
-    onLogin(client, player)
+    onLogin(client, player);
+
+    onJoinRoom(client)
     
 
     client.emit('client_id', {
@@ -32,7 +35,7 @@ io.on('connection', (client) => {
     });
 
     
-    onDisconnect(client, player)
+    onDisconnect(client, player);
 
     
 });

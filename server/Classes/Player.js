@@ -14,7 +14,6 @@ class Player{
   }
 
   replacer(key, value) {
-      // we don't need to send the socket object to the client
       if (key == "socket") return undefined;
       else return value;
   }

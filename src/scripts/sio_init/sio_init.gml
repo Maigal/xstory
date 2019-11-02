@@ -15,5 +15,5 @@ gml_pragma("global", "sio_init()");
 	sio_addEvent("login_failure");
 	sio_addEvent("status");
 	sio_addEvent("create_player_other");
-	sio_addEvent("room_created");
+	sio_addEvent("join_room");
 #endregion
