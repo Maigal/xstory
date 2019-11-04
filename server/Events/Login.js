@@ -22,7 +22,8 @@ module.exports = function(client, player) {
             username: dbUser.username,
             room: dbUser.room,
             x: dbUser.x,
-            y: dbUser.y
+            y: dbUser.y,
+            cId: client.id
           });
           state.onlinePlayers.push(player);
           console.log('Online players', state.onlinePlayers.map(el => el.toString()))

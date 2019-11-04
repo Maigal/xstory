@@ -7,6 +7,7 @@ class Player{
      this.x = data.x;
      this.y = data.y;
      this.socket = data.socket
+     this.cId = data.cId;
   }
  
   toString() {

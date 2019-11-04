@@ -35,7 +35,7 @@ io.on('connection', (client) => {
     });
 
     
-    onDisconnect(client, player);
+    onDisconnect(client);
 
     
 });

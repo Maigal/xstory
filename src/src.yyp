@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "3f72701d-adef-4dce-9ca9-2af43fb3931c",
+            "Value": {
+                "id": "b910ff0e-e40a-4ee5-a8b2-0e82cdb2ff6d",
+                "resourcePath": "scripts\\gmcallback_sio_on_remove_player_other\\gmcallback_sio_on_remove_player_other.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4221915b-bdea-4d99-a5ef-e3ffa42f0cc2",
             "Value": {
                 "id": "a8e69c30-bee6-4a65-b450-652a389e4cc5",
@@ -498,7 +506,8 @@
         "50531ae2-22e0-48a8-b6c6-213673ece4b1",
         "7c3e8da4-1ce0-4399-9a61-b5054a612492",
         "f1879f02-f16d-4e05-8222-c4595c2710af",
-        "eeb6dce3-bd0e-4415-8272-00adcbcebd72"
+        "eeb6dce3-bd0e-4415-8272-00adcbcebd72",
+        "3f72701d-adef-4dce-9ca9-2af43fb3931c"
     ],
     "tutorial": ""
 }
