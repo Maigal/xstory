@@ -3,6 +3,7 @@ const Player = require('./Classes/Player');
 const onLogin = require('./Events/Login');
 const onDisconnect = require('./Events/Disconnect');
 const onJoinRoom = require('./Events/JoinRoom');
+const onTick = require('./Events/Tick');
 const server = require('http').createServer();
 const io = require('socket.io')(server);
 
@@ -33,6 +34,8 @@ io.on('connection', (client) => {
     client.emit('client_id', {
       client_id: client.id
     });
+
+    onTick(client)
 
     
     onDisconnect(client);

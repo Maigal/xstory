@@ -26,7 +26,7 @@ module.exports = function(client, player) {
             cId: client.id
           });
           state.onlinePlayers.push(player);
-          console.log('Online players', state.onlinePlayers.map(el => el.toString()))
+          console.log('Online players', state.onlinePlayers)
 
           client.join(player.room)
           client.emit("login", player.toString())

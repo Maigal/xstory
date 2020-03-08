@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "632d1a16-059b-4892-ab18-6d32242dd780",
+            "Value": {
+                "id": "32ea1bfd-7753-424e-9bed-245fb6a39be5",
+                "resourcePath": "scripts\\emit_tick\\emit_tick.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6a6eec21-efef-4379-91f3-de4fcb07b218",
             "Value": {
                 "id": "5aa4bc07-75e3-4568-a736-0544a98992fa",
@@ -501,6 +509,7 @@
         "ebdfabbd-267a-4ab6-9bc5-df515e4c726a",
         "2c9aac52-42b8-4260-9ac2-b83bf30f9c0b",
         "d838281a-449b-408d-8ca5-6e476629c1aa",
+        "632d1a16-059b-4892-ab18-6d32242dd780",
         "70f86fba-065c-4118-8766-f523a9944c78",
         "8ae24585-7f81-4009-aed6-4777c3f0cbd0",
         "50531ae2-22e0-48a8-b6c6-213673ece4b1",
