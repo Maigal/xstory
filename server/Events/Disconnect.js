@@ -6,7 +6,9 @@ module.exports = function(client) {
 
     const player = state.onlinePlayers.find(ply => ply.cId === client.id);
 
-    client.to(player.room).broadcast.emit('remove_player_other', player.id);
+    if (player) {
+      client.to(player.room).broadcast.emit('remove_player_other', player.id);
+    }
 
     state.onlinePlayers.splice(state.onlinePlayers.indexOf(player), 1);
     console.log('remaining players', state.onlinePlayers)

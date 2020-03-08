@@ -1,7 +1,7 @@
 {
     "id": "9f5f87eb-9266-4b29-8d93-5935e52680d5",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "SocketIO",
     "IncludedResources": [
         
@@ -20,6 +20,7 @@
     "copyToTargets": 32,
     "date": "2019-23-04 02:02:07",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         {
@@ -198,9 +199,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "",
     "productID": "",
     "sourcedir": "",
+    "supportedTargets": 32,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         
