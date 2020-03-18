@@ -8,7 +8,9 @@ module.exports = function(client) {
     const player = state.onlinePlayers.find(ply => ply.id === joinRoomData.userId);
 
 
-     console.log(`join room data: '${data}'`);
+     console.log(`join room data: '${joinRoomData}'`);
+
+     state.rooms[player.room].push(joinRoomData.userId);
 
      client.to(player.room).broadcast.emit('create_player_other', player.toString());
 

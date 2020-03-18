@@ -15,7 +15,6 @@ let state = require('./state.js')
 
 
 
-
 server.listen(PORT, (err) => {
     if (err) throw err;
     console.log(`Listening on port.. > ${PORT}`);
@@ -42,3 +41,12 @@ io.on('connection', (client) => {
 
     
 });
+
+setInterval(updateRooms, 5000)
+
+function updateRooms() {
+  for (r in state.rooms) {
+    console.log(r, state.rooms[r])
+  }
+  io.sockets.in(r).emit('tick_room', 'test');
+}

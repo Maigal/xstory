@@ -6,12 +6,9 @@ module.exports = function(client) {
   client.on('tick', (data) => {
 
     const tickData = JSON.parse(data);
-    console.log('td', tickData)
 
-    //const player = state.onlinePlayers.find(ply => ply.id === data.userId);
+    const player = state.onlinePlayers.find(ply => ply.id === tickData.userId);
     const playerIndex = state.onlinePlayers.findIndex(player => player.id === tickData.userId)
-
-    console.log('pi', playerIndex)
 
     if (playerIndex !== -1) {
       let targetPlayer = state.onlinePlayers[playerIndex]
@@ -20,7 +17,8 @@ module.exports = function(client) {
         x: tickData.x || targetPlayer.x,
         y: tickData.y || targetPlayer.y
       }
-      console.log('op', state.onlinePlayers)
+
+      client.to(player.room).broadcast.emit('tick_other', {id: targetPlayer.id, x: targetPlayer.x, y: targetPlayer.y});
     }
     
   });
