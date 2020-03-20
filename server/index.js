@@ -46,7 +46,7 @@ setInterval(updateRooms, 5000)
 
 function updateRooms() {
   for (r in state.rooms) {
-    console.log(r, state.rooms[r])
+    //console.log(r, state.rooms[r])
   }
   io.sockets.in(r).emit('tick_room', 'test');
 }

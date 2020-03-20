@@ -16,8 +16,9 @@ module.exports = function(client) {
 
      for (let i in state.onlinePlayers) {
        if (state.onlinePlayers[i] !== player && state.onlinePlayers[i].room === player.room) {
-           //console.log('Player correcto!!', state.onlinePlayers[i].toString());
-           client.emit('create_player_other', state.onlinePlayers[i].toString());
+           const tPlayer = {...state.onlinePlayers[i], socket: undefined};
+           //console.log('Player correcto!!', state.onlinePlayers[i]);
+           client.emit('create_player_other', tPlayer);
        }
      }
     }

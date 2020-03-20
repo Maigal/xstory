@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "8581ebf5-e6a0-44ad-a8d1-804ca80efd5a",
+            "Value": {
+                "id": "d9c175fd-0c3e-4161-95b3-0350f0a0b6e5",
+                "resourcePath": "sprites\\sSolid\\sSolid.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89f9406e-71fd-494a-b36b-883866a71b8b",
             "Value": {
                 "id": "261778b1-6f21-4e91-b4ab-16297e6f289a",
@@ -292,6 +300,14 @@
                 "id": "9310e2c0-f7df-40af-83ab-e0d293df4a43",
                 "resourcePath": "extensions\\SocketIO\\SocketIO.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "9fb1c6d3-99da-4598-9fa4-3784332cb065",
+            "Value": {
+                "id": "7cb152a7-2f18-4fca-b7f0-5508b2801ab8",
+                "resourcePath": "fonts\\fName\\fName.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -508,6 +524,14 @@
                 "id": "0caff287-8727-468b-98f2-b70ed3df7786",
                 "resourcePath": "fonts\\fLogin\\fLogin.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "fe0ba543-e612-4bcf-b2f7-a4862219242e",
+            "Value": {
+                "id": "2d46ffe5-c7be-409e-9cdc-643904db1103",
+                "resourcePath": "objects\\oSolid\\oSolid.yy",
+                "resourceType": "GMObject"
             }
         },
         {
