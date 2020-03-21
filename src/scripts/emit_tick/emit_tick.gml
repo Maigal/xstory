@@ -7,5 +7,6 @@ var data = ds_map_create();
   data[? "x"] = oPlayer.x;
   data[? "y"] = oPlayer.y;
   data[? "animation"] = oPlayer.animation;
+  data[? "dir"] = oPlayer.image_xscale;
   sio_emit("tick", json_encode(data));
 ds_map_destroy(data);

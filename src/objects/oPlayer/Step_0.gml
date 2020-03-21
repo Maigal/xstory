@@ -40,6 +40,8 @@ if (move != 0) {
 
 
 
+
+
 if (place_meeting(x, y + 1, oSolid)) { vsp = kJump * -jumpSpeed }
 
 // H Collisions 
@@ -48,9 +50,15 @@ if (place_meeting(x + hsp, y, oSolid)) { while (!place_meeting(x + sign(hsp), y,
 // v Collisions 
 if (place_meeting(x, y + vsp, oSolid)) { while (!place_meeting(x, y + sign(vsp), oSolid)) { y += sign(vsp); } vsp = 0; } y += vsp;
 
-
+if (move != 0 || vsp !=0) {
+	isIdle = false;
+}
 
 if (x != prevX || y != prevY) {
 	animation = skeleton_animation_get();
 	emit_tick();
+} else if (!isIdle){
+	animation = skeleton_animation_get();
+	emit_tick();
+	isIdle = true;
 }

@@ -9,5 +9,7 @@ with(oPlayerOther){
 	if (playerId = data[? "id"]) {
 		x = data[? "x"]
 		y = data[? "y"]
+		image_xscale = data[? "dir"]
+		animation = data[? "animation"]
 	}
 }
