@@ -22,8 +22,23 @@ kJump = keyboard_check_pressed(vk_up);
 // Use input 
 
 move = kLeft + kRight;
- hsp = move * moveSpeed; 
- if (vsp < 10) { vsp += grav; };
+hsp = move * moveSpeed; 
+if (vsp < 10) { vsp += grav; };
+
+if (move != 0) {
+	image_xscale = move;
+	if (skeleton_animation_get() != "run") {
+      skeleton_animation_set("run");
+	  image_speed = 2;
+    }
+} else {
+	if (skeleton_animation_get() != "idle") {
+      skeleton_animation_set("idle");
+	  image_speed = 0.5;
+    }
+}
+
+
 
 if (place_meeting(x, y + 1, oSolid)) { vsp = kJump * -jumpSpeed }
 
@@ -36,5 +51,6 @@ if (place_meeting(x, y + vsp, oSolid)) { while (!place_meeting(x, y + sign(vsp),
 
 
 if (x != prevX || y != prevY) {
-	emit_tick()
+	animation = skeleton_animation_get();
+	emit_tick();
 }
