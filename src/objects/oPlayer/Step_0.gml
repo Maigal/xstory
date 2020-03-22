@@ -3,58 +3,134 @@
 
 var prevX = x;
 var prevY = y;
-
-//if( keyboard_check( vk_up)){
-//    y = y-5;
-//}else if(keyboard_check( vk_down)){
-//     y = y+5;
-//}else if( keyboard_check( vk_left)){
-//     x = x-5;
-//}else if( keyboard_check( vk_right)){
-//    x = x+5;
-//}
+var prevState = state;
 
 // Get input 
 kLeft = -keyboard_check(vk_left); 
 kRight = keyboard_check(vk_right); 
-kJump = keyboard_check_pressed(vk_up);
+kJump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space);
+kAttack = keyboard_check_pressed(vk_control);
 
 // Use input 
 
 move = kLeft + kRight;
 hsp = move * moveSpeed; 
-if (vsp < 10) { vsp += grav; };
 
-if (move != 0) {
-	image_xscale = move;
-	if (skeleton_animation_get() != "run") {
-      skeleton_animation_set("run");
-	  image_speed = 2;
-    }
+if (kAttack) {
+	state = "attacking";
+}
+
+if (state == "attacking") {
+	if (image_index + image_speed >= image_number)
+	{
+	    state = "idle";
+	}
+	if (punch_count > 0) {
+		var inst;
+		var hand = skeleton_get_bounds(0)
+		inst = collision_rectangle(hand[2], hand[3], hand[4], hand[5], oBox, false, false)
+		if (inst != noone){
+			with(inst) {
+				hp -= 10;
+			}
+			punch_count -= 1;
+			alarm[0] = 60;
+		}
+	}
+	
 } else {
-	if (skeleton_animation_get() != "idle") {
-      skeleton_animation_set("idle");
-	  image_speed = 0.5;
-    }
+	if (vsp > 0) {
+		state = "fall";
+	} else if (vsp < 0) {
+		state = "jump";
+	} else {
+		if (move != 0) {
+			state = "run";
+		} else if (move == 0){
+			state = "idle";
+		}
+	}
+
 }
 
 
+if (vsp < 10) { vsp += grav; };
 
+
+
+if (move != 0) {
+	image_xscale = move;
+}
+
+
+switch (state) {
+	case "attacking":
+		if (skeleton_animation_get() != "attack_punch"){
+			skeleton_animation_set("attack_punch")
+			image_speed = 2;
+		}
+		break;
+		
+	case "idle":
+		if (skeleton_animation_get() != "idle"){
+			skeleton_animation_set("idle")
+			image_speed = 0.5;
+		}
+		break;
+		
+	case "run":
+		if (skeleton_animation_get() != "run"){
+			skeleton_animation_set("run")
+			image_speed = 2;
+		}
+		break;
+		
+	case "fall":
+		if (skeleton_animation_get() != "fall"){
+			skeleton_animation_set("fall")
+			image_speed = 0.5;
+		}
+		break;
+		
+	case "jump":
+		if (skeleton_animation_get() != "jump"){
+			skeleton_animation_set("jump")
+			image_speed = 0.5;
+		}
+		break;
+}
+
+
+	
 
 
 if (place_meeting(x, y + 1, oSolid)) { vsp = kJump * -jumpSpeed }
 
 // H Collisions 
-if (place_meeting(x + hsp, y, oSolid)) { while (!place_meeting(x + sign(hsp), y, oSolid)) { x += sign(hsp); } hsp = 0; } x += hsp;
+if (place_meeting(x + hsp, y, oSolid)) { 
+	while (!place_meeting(x + sign(hsp), y, oSolid)) {
+		x += sign(hsp); 
+	} hsp = 0; 
+} 
+
+x += hsp;
 
 // v Collisions 
-if (place_meeting(x, y + vsp, oSolid)) { while (!place_meeting(x, y + sign(vsp), oSolid)) { y += sign(vsp); } vsp = 0; } y += vsp;
+if (place_meeting(x, y + vsp, oSolid)) { 
+	while (!place_meeting(x, y + sign(vsp), oSolid)) {
+		y += sign(vsp); 
+	} vsp = 0; 
+} 
+
+y += vsp;
+
 
 if (move != 0 || vsp !=0) {
 	isIdle = false;
 }
 
-if (x != prevX || y != prevY) {
+show_debug_message(state + " " + prevState)
+if (x != prevX || y != prevY || state != prevState) {
 	animation = skeleton_animation_get();
 	emit_tick();
 } else if (!isIdle){

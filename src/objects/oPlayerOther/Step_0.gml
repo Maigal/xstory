@@ -27,4 +27,13 @@ switch(skeleton_animation_get()) {
 	case "run":
 		image_speed = 2;
 		break;
+	case "attack_punch":
+		image_speed = 2;
+		break;
+	case "run":
+		image_speed = 0.5;
+		break;
+	case "idle":
+		image_speed = 0.5;
+		break;
 }
