@@ -7,8 +7,10 @@ const onTick = require('./Events/Tick');
 const server = require('http').createServer();
 const io = require('socket.io')(server);
 const roomSettings = require('./roomSettings')
+const helpers = require('./helpers')
 
 let state = require('./state.js')
+let mobUID = 0;
 
 //require('./db.js')
 
@@ -50,7 +52,26 @@ function updateRooms() {
     const config = roomSettings[room]
     const roomState = state.rooms[room]
     console.log('cfg', config)
-    console.log('room', roomState)
+    console.log('roomState', roomState)
+
+    if (roomState.players.length > 0) {
+      if (roomState.mobs.length < config.mobs.amount) {
+        for(let i = 0; i < config.mobs.amount - roomState.mobs.length; i++) {
+          const coordinates = helpers.getAreaCoordinates(config.mobs.areas);
+          roomState.mobs.push({
+            ...config.mobs.mobType,
+            x: coordinates.x,
+            y: coordinates.y,
+            UID: mobUID
+          })
+          mobUID++
+        }
+      }
+      //console.log('rmobs', roomState.mobs)
+      console.log('roomstate', roomState)
+      
+      io.sockets.in(room).emit('tick_room', JSON.stringify(roomState.mobs));
+    }
   }
-  io.sockets.in(room).emit('tick_room', 'test');
+  //console.log('srooms', state.rooms)
 }
