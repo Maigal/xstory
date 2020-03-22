@@ -6,6 +6,7 @@ const onJoinRoom = require('./Events/JoinRoom');
 const onTick = require('./Events/Tick');
 const server = require('http').createServer();
 const io = require('socket.io')(server);
+const roomSettings = require('./roomSettings')
 
 let state = require('./state.js')
 
@@ -45,8 +46,11 @@ io.on('connection', (client) => {
 setInterval(updateRooms, 5000)
 
 function updateRooms() {
-  for (r in state.rooms) {
-    //console.log(r, state.rooms[r])
+  for (room in state.rooms) {
+    const config = roomSettings[room]
+    const roomState = state.rooms[room]
+    console.log('cfg', config)
+    console.log('room', roomState)
   }
-  io.sockets.in(r).emit('tick_room', 'test');
+  io.sockets.in(room).emit('tick_room', 'test');
 }

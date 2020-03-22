@@ -10,7 +10,7 @@ module.exports = function(client) {
 
      console.log(`join room data: '${joinRoomData}'`);
 
-     state.rooms[player.room].push(joinRoomData.userId);
+     state.rooms[player.room].players.push(joinRoomData.userId);
 
      client.to(player.room).broadcast.emit('create_player_other', player.toString());
 

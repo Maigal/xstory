@@ -1,7 +1,10 @@
 module.exports = {
   onlinePlayers: [],
   rooms: {
-    roomTest1: []
+    roomTest1: {
+      players: [],
+      mobs: []
+    }
   }
 }
 
