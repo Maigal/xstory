@@ -17,8 +17,6 @@ module.exports = function(client) {
         x: tickData.x || targetPlayer.x,
         y: tickData.y || targetPlayer.y
       }
-
-      console.log({id: targetPlayer.id, x: targetPlayer.x, y: targetPlayer.y, dir: tickData.dir, animation: tickData.animation})
       client.to(player.room).broadcast.emit('tick_other', {id: targetPlayer.id, x: targetPlayer.x, y: targetPlayer.y, dir: tickData.dir, animation: tickData.animation});
     }
     
