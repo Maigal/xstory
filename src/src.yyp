@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "2f3ff092-394b-4e8f-824c-e01a3f20ac5b",
+            "Value": {
+                "id": "90a24060-4b24-4b6d-8d6b-5a391c3db2bd",
+                "resourcePath": "extensions\\TJSON\\TJSON.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "35a75e8a-c0ec-4034-a31d-528dc60d6cef",
             "Value": {
                 "id": "00ab5c7f-c5af-4450-84ad-2afff076707b",

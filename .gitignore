@@ -59,3 +59,11 @@ typings/
 
 # next.js build output
 .next
+
+# tjson private package
+src/extensions/TJSON/TJSON.yy
+src/extensions/TJSON/TJSON.yy._
+src/extensions/TJSON/TJSON.yy.json
+src/extensions/TJSON/tjson-native.gml
+src/extensions/TJSON/tjson-web.gml
+src/extensions/TJSON/tjson-web.js
