@@ -54,6 +54,8 @@ function updateRooms() {
     console.log('cfg', config)
     console.log('roomState', roomState)
 
+    roomState.mobs = roomState.mobs.map(el => ({...el, new: false}))
+
     if (roomState.players.length > 0) {
       if (roomState.mobs.length < config.mobs.amount) {
         for(let i = 0; i < config.mobs.amount - roomState.mobs.length; i++) {

@@ -129,7 +129,6 @@ if (move != 0 || vsp !=0) {
 	isIdle = false;
 }
 
-show_debug_message(state + " " + prevState)
 if (x != prevX || y != prevY || state != prevState) {
 	animation = skeleton_animation_get();
 	emit_tick();
