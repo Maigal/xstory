@@ -25,6 +25,8 @@ image_speed = 0.5;
 animation = "idle";
 prevState = "";
 state = "idle";
+x_lock = false;
+y_lock = true;
 
 col_list = ds_list_create()
 

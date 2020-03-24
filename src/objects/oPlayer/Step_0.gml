@@ -28,10 +28,12 @@ if (state == "attacking") {
 	if (punch_count > 0) {
 		var inst;
 		var hand = skeleton_get_bounds(0)
-		inst = collision_rectangle(hand[2], hand[3], hand[4], hand[5], oBox, false, false)
+		inst = collision_rectangle(hand[2], hand[3], hand[4], hand[5], oMonster, false, false)
 		if (inst != noone){
 			with(inst) {
-				hp -= 10;
+				damageAmount = 10;
+				statusAilment = none;
+				event_user(0) // Trigger user event 0 of oMonster
 			}
 			punch_count -= 1;
 			alarm[0] = 60;
