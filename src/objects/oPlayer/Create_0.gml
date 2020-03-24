@@ -12,8 +12,6 @@ skeleton_animation_set("idle")
 
 
 
-skeleton_collision_draw_set(true);
-
 grav = 0.3; 
 hsp = 0; 
 vsp = 0; 
@@ -31,3 +29,5 @@ y_lock = true;
 col_list = ds_list_create()
 
 punch_count = 1;
+
+currentMessage = "";

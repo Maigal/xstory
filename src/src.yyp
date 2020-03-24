@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0ad309eb-2c37-4835-a710-debf884a00b1",
+            "Value": {
+                "id": "cb7ff36d-985f-48b5-a159-4bb99d94468a",
+                "resourcePath": "objects\\oChatMsg\\oChatMsg.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1318a44b-1ead-47fe-b264-3a4762fcbc5a",
             "Value": {
                 "id": "07409cd9-14b8-4dd6-8016-1323879f1fd4",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "40d777d3-f2e8-40e6-bf8a-aeed2b3cc8c5",
+            "Value": {
+                "id": "2d95c30e-5b11-4cf2-b30a-8a678f35c0f5",
+                "resourcePath": "objects\\oChatLog\\oChatLog.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4221915b-bdea-4d99-a5ef-e3ffa42f0cc2",
             "Value": {
                 "id": "a8e69c30-bee6-4a65-b450-652a389e4cc5",
@@ -220,6 +236,14 @@
                 "id": "32ea1bfd-7753-424e-9bed-245fb6a39be5",
                 "resourcePath": "scripts\\emit_tick\\emit_tick.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "68ae1950-c400-49a7-a8b9-02964a7a65a9",
+            "Value": {
+                "id": "563923be-7c7f-4f38-8626-1d8628896f8b",
+                "resourcePath": "views\\68ae1950-c400-49a7-a8b9-02964a7a65a9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -503,6 +527,14 @@
             }
         },
         {
+            "Key": "d192060d-4b13-4f0a-ab5b-dc324ccbfbbb",
+            "Value": {
+                "id": "0d489d88-708f-4b7f-baac-353f4df0a61b",
+                "resourcePath": "scripts\\gmcallback_sio_on_chat_other\\gmcallback_sio_on_chat_other.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d838281a-449b-408d-8ca5-6e476629c1aa",
             "Value": {
                 "id": "c8848039-e35f-462d-89c2-b8efa7a53bd7",
@@ -599,6 +631,14 @@
             }
         },
         {
+            "Key": "fd6c687c-1214-4367-85cc-f17749e2d3d7",
+            "Value": {
+                "id": "928921aa-a8e3-47f4-9728-1f97238a9a18",
+                "resourcePath": "scripts\\emit_chat\\emit_chat.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fe0ba543-e612-4bcf-b2f7-a4862219242e",
             "Value": {
                 "id": "2d46ffe5-c7be-409e-9cdc-643904db1103",
@@ -622,6 +662,7 @@
         "2c9aac52-42b8-4260-9ac2-b83bf30f9c0b",
         "d838281a-449b-408d-8ca5-6e476629c1aa",
         "632d1a16-059b-4892-ab18-6d32242dd780",
+        "fd6c687c-1214-4367-85cc-f17749e2d3d7",
         "36249dd4-c2c6-4144-ae70-a07cdd942c21",
         "70f86fba-065c-4118-8766-f523a9944c78",
         "8ae24585-7f81-4009-aed6-4777c3f0cbd0",
@@ -631,7 +672,8 @@
         "eeb6dce3-bd0e-4415-8272-00adcbcebd72",
         "3f72701d-adef-4dce-9ca9-2af43fb3931c",
         "42553d04-42e6-42f2-a05f-3031e52cc971",
-        "2bae77d1-84b2-4dac-bbb6-b4018757f3f0"
+        "2bae77d1-84b2-4dac-bbb6-b4018757f3f0",
+        "d192060d-4b13-4f0a-ab5b-dc324ccbfbbb"
     ],
     "tutorial": ""
 }

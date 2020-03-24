@@ -4,6 +4,7 @@ const onLogin = require('./Events/Login');
 const onDisconnect = require('./Events/Disconnect');
 const onJoinRoom = require('./Events/JoinRoom');
 const onTick = require('./Events/Tick');
+const onChat = require('./Events/Chat');
 const onMobDamaged = require('./Events/MobDamaged');
 const server = require('http').createServer();
 const io = require('socket.io')(server);
@@ -39,6 +40,8 @@ io.on('connection', (client) => {
     });
 
     onTick(client)
+
+    onChat(client)
 
     onMobDamaged(client)
 
@@ -103,7 +106,7 @@ function updateRooms() {
           mobUID++
         }
       }
-      console.log('rmobs', roomState.mobs)
+      //console.log('rmobs', roomState.mobs)
       //console.log('roomstate', roomState)
       
       io.sockets.in(room).emit('tick_room', JSON.stringify(roomState.mobs));

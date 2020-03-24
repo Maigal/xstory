@@ -7,3 +7,5 @@ skeleton_animation_set("idle")
 image_speed = 3;
 
 animation = "idle";
+
+currentMessage = "";

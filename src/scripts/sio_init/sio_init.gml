@@ -21,4 +21,6 @@ gml_pragma("global", "sio_init()");
 	sio_addEvent("tick_other");
 	sio_addEvent("tick_room");
 	sio_addEvent("mob_damaged");
+	sio_addEvent("chat");
+	sio_addEvent("chat_other");
 #endregion
