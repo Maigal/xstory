@@ -11,14 +11,29 @@ const io = require('socket.io')(server);
 const roomSettings = require('./roomSettings')
 const helpers = require('./helpers')
 
+
+// CLIENT TEMP WRAPPER
+const express = require('express')
+const app = express();
+const path = require('path');
+// END CLIENT TEMP WRAPPER
+
 let state = require('./state.js')
 let mobUID = 0;
 
 //require('./db.js')
 
+// CLIENT TEMP WRAPPER 
+app.use(express.static(path.join(__dirname, '../client')));
 
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'../client/index.html'));
+});
 
-
+app.listen(80, () => {
+    console.log('Listening on port 80!')
+})
+// END CLIENT TEMP WRAPPER 
 
 server.listen(PORT, (err) => {
     if (err) throw err;
