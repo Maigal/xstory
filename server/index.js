@@ -45,18 +45,38 @@ io.on('connection', (client) => {
     
 });
 
-setInterval(updateRooms, 5000)
+setInterval(updateRooms, 50)
 
 function updateRooms() {
   for (room in state.rooms) {
     const config = roomSettings[room]
     const roomState = state.rooms[room]
-    console.log('cfg', config)
-    console.log('roomState', roomState)
-
-    roomState.mobs = roomState.mobs.map(el => ({...el, new: false}))
+    //console.log('cfg', config)
+    //console.log('roomState', roomState)
 
     if (roomState.players.length > 0) {
+      roomState.mobs = roomState.mobs.map(mob => {
+        const maxCoordinates = {
+          x1: config.mobs.areas[0].x1,
+          y1: config.mobs.areas[0].y1,
+          x2: config.mobs.areas[0].x2,
+          y2: config.mobs.areas[0].y2
+        }
+        const newCoordinates = helpers.calculateNextCoordinates(
+          {x: mob.x, y: mob.y},
+          maxCoordinates,
+          mob.movement,
+          mob.direction,
+          mob.speed
+          )
+
+        return {
+          ...mob,
+          x: newCoordinates.x,
+          y: newCoordinates.y,
+          direction: newCoordinates.direction
+        }
+      })
       if (roomState.mobs.length < config.mobs.amount) {
         for(let i = 0; i < config.mobs.amount - roomState.mobs.length; i++) {
           const coordinates = helpers.getAreaCoordinates(config.mobs.areas);
@@ -70,7 +90,7 @@ function updateRooms() {
         }
       }
       //console.log('rmobs', roomState.mobs)
-      console.log('roomstate', roomState)
+      //console.log('roomstate', roomState)
       
       io.sockets.in(room).emit('tick_room', JSON.stringify(roomState.mobs));
     }
