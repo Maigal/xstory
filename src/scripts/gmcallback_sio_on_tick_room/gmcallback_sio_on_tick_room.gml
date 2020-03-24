@@ -5,7 +5,6 @@ var data = tj_decode(argument[0]);
 var i;
 for (i = 0; i < array_length_1d(data); i += 1) {
 	var some_ok = false;
-	show_debug_message(i)
 	var objMob = asset_get_index(tj_get(data[i],"objectName"))
 	with (objMob) {
 		if (uid == tj_get(data[i],"UID")){
