@@ -8,9 +8,15 @@ for (i = 0; i < array_length_1d(data); i += 1) {
 	var objMob = asset_get_index(tj_get(data[i],"objectName"))
 	with (objMob) {
 		if (uid == tj_get(data[i],"UID")){
-			x = tj_get(data[i],"x")
-			y = tj_get(data[i],"y")
-			some_ok = true
+			if (tj_get(data[i],"hp") > 0) {
+				x = tj_get(data[i],"x")
+				y = tj_get(data[i],"y")
+				hp = tj_get(data[i],"hp")
+				some_ok = true
+			} else {
+				some_ok = true
+				instance_destroy()
+			}
 		}
 	}
 	if (!some_ok) {
@@ -19,6 +25,7 @@ for (i = 0; i < array_length_1d(data); i += 1) {
 			uid = tj_get(data[i],"UID")
 			x = tj_get(data[i],"x")
 			y = tj_get(data[i],"y")
+			hp = tj_get(data[i],"hp")
 		}
 	}
 }

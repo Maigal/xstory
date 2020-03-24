@@ -5,24 +5,30 @@
       "username": "b",
       "password": "b",
       "room": "roomTest1",
-      "x": "200",
-      "y": "200"
+      "x": 613,
+      "y": 512.6999999999991,
+      "level": 1,
+      "exp": 0
     },
     {
       "id": 1,
       "username": "c",
       "password": "c",
       "room": "roomTest1",
-      "x": "300",
-      "y": "300"
+      "x": 525,
+      "y": 577.0000000000005,
+      "level": 1,
+      "exp": 0
     },
     {
       "id": 2,
       "username": "a",
       "password": "a",
       "room": "roomTest1",
-      "x": "150",
-      "y": "300"
+      "x": 605,
+      "y": 512.8000000000004,
+      "level": 1,
+      "exp": 0
     }
   ]
 }

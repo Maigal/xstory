@@ -58,7 +58,7 @@ function updateRooms() {
     //console.log('roomState', roomState)
 
     if (roomState.players.length > 0) {
-      roomState.mobs = roomState.mobs.map(mob => {
+      roomState.mobs = roomState.mobs.filter(mob => !mob.isDead).map(mob => {
         const maxCoordinates = {
           x1: config.mobs.areas[0].x1,
           y1: config.mobs.areas[0].y1,
@@ -73,11 +73,22 @@ function updateRooms() {
           mob.speed
           )
 
+        let conditionalData = {}
+
+        if (mob.hp <= 0) {
+          conditionalData.isDead = true
+          conditionalData.killExp = {}
+          Object.keys(mob.attackers).forEach(key => {
+            conditionalData.killExp[key] = (mob.attackers[key] * 100) / mob.maxHp
+          })
+        }
+
         return {
           ...mob,
           x: newCoordinates.x,
           y: newCoordinates.y,
-          direction: newCoordinates.direction
+          direction: newCoordinates.direction,
+          ...conditionalData
         }
       })
       if (roomState.mobs.length < config.mobs.amount) {
@@ -92,7 +103,7 @@ function updateRooms() {
           mobUID++
         }
       }
-      //console.log('rmobs', roomState.mobs)
+      console.log('rmobs', roomState.mobs)
       //console.log('roomstate', roomState)
       
       io.sockets.in(room).emit('tick_room', JSON.stringify(roomState.mobs));
