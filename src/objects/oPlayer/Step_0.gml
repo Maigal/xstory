@@ -8,12 +8,18 @@ var prevState = state;
 // Get input 
 kLeft = -keyboard_check(vk_left); 
 kRight = keyboard_check(vk_right); 
-kJump = keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space);
-kAttack = keyboard_check_pressed(vk_control);
+kJump = !global.uiInteraction && (keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space));
+kAttack = !global.uiInteraction && keyboard_check_pressed(vk_control);
 
 // Use input 
 
-move = kLeft + kRight;
+if (!global.uiInteraction) {
+	move = kLeft + kRight;
+} else {
+	move = 0;
+}
+
+
 hsp = move * moveSpeed; 
 
 if (kAttack) {

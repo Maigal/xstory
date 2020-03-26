@@ -15,6 +15,13 @@ for (i = 0; i < array_length_1d(data); i += 1) {
 				some_ok = true
 			} else {
 				some_ok = true
+				var killData = tj_get(data[i], "killExp")
+				if (tj_get(killData, global.userId)) {
+					with(oExp){
+						global.xp += tj_get(killData, global.userId)
+						event_user(0)
+					}
+				}
 				instance_destroy()
 			}
 		}

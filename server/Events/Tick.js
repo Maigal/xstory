@@ -15,7 +15,9 @@ module.exports = function(client) {
       state.onlinePlayers[playerIndex] = {
         ...targetPlayer,
         x: tickData.x || targetPlayer.x,
-        y: tickData.y || targetPlayer.y
+        y: tickData.y || targetPlayer.y,
+        level: tickData.level || targetPlayer.level,
+        exp: tickData.exp || targetPlayer.exp,
       }
       client.to(player.room).broadcast.emit('tick_other', {id: targetPlayer.id, x: targetPlayer.x, y: targetPlayer.y, dir: tickData.dir, animation: tickData.animation});
     }

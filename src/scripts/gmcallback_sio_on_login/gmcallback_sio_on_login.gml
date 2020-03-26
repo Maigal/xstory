@@ -6,6 +6,8 @@ global.rm = data[? "room"];
 global.nextRoom = data[? "room"];
 global.x = data[? "x"];
 global.y = data[? "y"];
+global.level = data[? "level"];
+global.xp = data[? "exp"];
 
 var rm = asset_get_index(global.nextRoom);
 room_goto(rm);

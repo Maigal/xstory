@@ -12,7 +12,9 @@ module.exports = function(client) {
       db.get('users').find({username: player.username}).assign({
         room: player.room,
         x: player.x,
-        y: player.y
+        y: player.y,
+        exp: player.exp,
+        level: player.level
       }).value()
 
       db.write()

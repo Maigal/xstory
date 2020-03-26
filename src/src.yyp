@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "3e619296-b144-4f70-936c-cfa99290cb72",
+            "Value": {
+                "id": "49d28456-26eb-4a27-a995-63755741a891",
+                "resourcePath": "fonts\\fLevel\\fLevel.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "3f00fdaf-7e73-4b66-b7e1-4396cf85544c",
             "Value": {
                 "id": "e76c9dcd-5f82-48ce-adbc-838110256f38",
@@ -163,6 +171,14 @@
             "Value": {
                 "id": "2d95c30e-5b11-4cf2-b30a-8a678f35c0f5",
                 "resourcePath": "objects\\oChatLog\\oChatLog.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "41f5eb21-6b7b-4d2e-8781-26ef2929e50a",
+            "Value": {
+                "id": "6a395187-d23b-4c6f-a3ad-9374a001a9f9",
+                "resourcePath": "objects\\oExp\\oExp.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -375,6 +391,14 @@
             }
         },
         {
+            "Key": "955d0649-c118-46ab-a328-417b82cbf441",
+            "Value": {
+                "id": "03341145-c923-4844-a62c-c2c15719571c",
+                "resourcePath": "views\\955d0649-c118-46ab-a328-417b82cbf441.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9f5f87eb-9266-4b29-8d93-5935e52680d5",
             "Value": {
                 "id": "9310e2c0-f7df-40af-83ab-e0d293df4a43",
@@ -551,6 +575,14 @@
             }
         },
         {
+            "Key": "e25f3052-e92c-4960-af04-ca8481e239e2",
+            "Value": {
+                "id": "21cc1774-d9b6-44b9-8d87-ee9a4c724187",
+                "resourcePath": "sprites\\sExpRing\\sExpRing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "e705db14-e918-465f-a7b1-208c3da8b5bb",
@@ -564,6 +596,14 @@
                 "id": "5004c3ef-c8e5-435b-95b7-395418466461",
                 "resourcePath": "views\\e53f9e56-05b3-4abf-8789-cb8123d6fa14.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e9b9b76c-b6a8-4893-9b9e-11db47e3652c",
+            "Value": {
+                "id": "22e4a5d1-698f-44b6-ad8c-4446c8aff258",
+                "resourcePath": "scripts\\draw_exp_ring\\draw_exp_ring.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -673,7 +713,8 @@
         "3f72701d-adef-4dce-9ca9-2af43fb3931c",
         "42553d04-42e6-42f2-a05f-3031e52cc971",
         "2bae77d1-84b2-4dac-bbb6-b4018757f3f0",
-        "d192060d-4b13-4f0a-ab5b-dc324ccbfbbb"
+        "d192060d-4b13-4f0a-ab5b-dc324ccbfbbb",
+        "e9b9b76c-b6a8-4893-9b9e-11db47e3652c"
     ],
     "tutorial": ""
 }
