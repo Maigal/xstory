@@ -14,3 +14,4 @@ if (currentMessage != "") {
 //draw_text(x, y - 130, state);
 //draw_text(x, y - 150, skeleton_animation_get());
 
+

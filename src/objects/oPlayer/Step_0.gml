@@ -42,7 +42,7 @@ if (state == "attacking") {
 				event_user(0) // Trigger user event 0 of oMonster
 			}
 			punch_count -= 1;
-			alarm[0] = 60;
+			alarm[0] = 50;
 		}
 	}
 	
@@ -73,8 +73,8 @@ if (move != 0) {
 
 switch (state) {
 	case "attacking":
-		if (skeleton_animation_get() != "attack_punch"){
-			skeleton_animation_set("attack_punch")
+		if (skeleton_animation_get() != "attack_sword_1"){
+			skeleton_animation_set("attack_sword_1")
 			image_speed = 2;
 		}
 		break;
