@@ -1,11 +1,15 @@
 var data = json_decode(argument0);
 
+show_debug_message(argument0)
+
 global.userId = data[? "id"];
 global.username = data[? "username"];
 global.rm = data[? "room"];
 global.nextRoom = data[? "room"];
 global.x = data[? "x"];
 global.y = data[? "y"];
+global.hp = data[? "hp"];
+global.maxHp = data[? "maxHp"];
 global.level = data[? "level"];
 global.xp = data[? "exp"];
 

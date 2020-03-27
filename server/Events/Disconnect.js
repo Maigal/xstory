@@ -13,6 +13,8 @@ module.exports = function(client) {
         room: player.room,
         x: player.x,
         y: player.y,
+        hp: player.hp,
+        maxHp: player.maxHp,
         exp: player.exp,
         level: player.level
       }).value()

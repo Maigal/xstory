@@ -23,6 +23,8 @@ module.exports = function(client, player) {
             room: dbUser.room,
             x: dbUser.x,
             y: dbUser.y,
+            hp: dbUser.hp,
+            maxHp: dbUser.maxHp,
             level: dbUser.level,
             exp: dbUser.exp,
             cId: client.id            

@@ -16,6 +16,8 @@ module.exports = function(client) {
         ...targetPlayer,
         x: tickData.x || targetPlayer.x,
         y: tickData.y || targetPlayer.y,
+        hp: tickData.hp || targetPlayer.hp,
+        maxHp: tickData.maxHp || targetPlayer.maxHp,
         level: tickData.level || targetPlayer.level,
         exp: tickData.exp || targetPlayer.exp,
       }

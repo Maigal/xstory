@@ -6,6 +6,8 @@ class Player{
      this.room = data.room;
      this.x = data.x;
      this.y = data.y;
+     this.hp = data.hp;
+     this.maxHp = data.maxHp
      this.level = data.level;
      this.exp = data.exp;
      this.socket = data.socket

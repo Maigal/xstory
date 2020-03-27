@@ -11,7 +11,6 @@ skeleton_animation_mix("run", "fall", 0.03)
 skeleton_animation_set("idle")
 
 
-
 grav = 0.3; 
 hsp = 0; 
 vsp = 0; 
@@ -22,8 +21,10 @@ animation = "idle";
 prevState = "";
 state = "idle";
 x_lock = false;
-y_lock = true;
+y_lock = false;
 col_list = ds_list_create()
 punch_count = 1;
 currentMessage = "";
+
+isImmune = false;
 
