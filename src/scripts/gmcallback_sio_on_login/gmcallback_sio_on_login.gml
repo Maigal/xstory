@@ -12,6 +12,9 @@ global.hp = data[? "hp"];
 global.maxHp = data[? "maxHp"];
 global.level = data[? "level"];
 global.xp = data[? "exp"];
+global.skinColor = data[? "skinColor"];
+global.eyeColor = data[? "eyeColor"];
+global.role = data[? "role"];
 
 var rm = asset_get_index(global.nextRoom);
 room_goto(rm);

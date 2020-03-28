@@ -27,6 +27,9 @@ module.exports = function(client, player) {
             maxHp: dbUser.maxHp,
             level: dbUser.level,
             exp: dbUser.exp,
+            skinColor: dbUser.skinColor,
+            eyeColor: dbUser.eyeColor,
+            role: dbUser.role,
             cId: client.id            
           });
           state.onlinePlayers.push(player);

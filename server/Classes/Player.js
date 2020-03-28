@@ -10,7 +10,10 @@ class Player{
      this.maxHp = data.maxHp
      this.level = data.level;
      this.exp = data.exp;
-     this.socket = data.socket
+     this.skinColor = data.skinColor
+     this.eyeColor = data.eyeColor
+     this.role = data.role
+     this.socket = data.socket;
      this.cId = data.cId;
   }
  

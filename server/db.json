@@ -4,145 +4,209 @@
       "id": 0,
       "username": "b",
       "password": "b",
+      "nickname": "b",
       "room": "roomTest1",
-      "x": 839,
-      "y": 385.39999999999986,
-      "level": 3,
-      "exp": 12,
-      "hp": -190,
-      "maxHp": 100
+      "x": 201,
+      "y": 640.5000000000006,
+      "level": 4,
+      "exp": 6,
+      "hp": 100,
+      "maxHp": 100,
+      "skinColor": {
+        "r": 150,
+        "g": 131,
+        "b": 233
+      },
+      "eyeColor": {
+        "r": 55,
+        "g": 55,
+        "b": 255
+      },
+      "role": "user"
     },
     {
       "id": 1,
       "username": "c",
       "password": "c",
+      "nickname": "c",
       "room": "roomTest1",
-      "x": 1167,
-      "y": 577.4999999999999,
-      "level": 2,
-      "exp": 4,
-      "hp": 80,
-      "maxHp": 100
+      "x": 671,
+      "y": 641.0000000000001,
+      "level": 3,
+      "exp": 9,
+      "hp": 100,
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 2,
       "username": "a",
       "password": "a",
+      "nickname": "a",
       "room": "roomTest1",
-      "x": 1437,
-      "y": 641.3000000000002,
-      "level": 2,
-      "exp": 7,
-      "hp": 10,
-      "maxHp": 100
+      "x": 275,
+      "y": 641.2000000000004,
+      "level": 3,
+      "exp": 2,
+      "hp": 100,
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 3,
       "username": "mati",
       "password": "mati",
+      "nickname": "mati",
       "room": "roomTest1",
-      "x": 133,
-      "y": 640.9000000000005,
+      "x": 489,
+      "y": 577.0000000000005,
       "level": 1,
       "exp": 1,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "eyeColor": {
+        "r": 255,
+        "g": 0,
+        "b": 0
+      },
+      "role": "gm"
     },
     {
       "id": 4,
       "username": "chafo",
       "password": "chafo",
+      "nickname": "chafo",
       "room": "roomTest1",
       "x": 133,
       "y": 640.9000000000005,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 5,
       "username": "joan",
       "password": "joan",
+      "nickname": "joan",
       "room": "roomTest1",
       "x": 133,
       "y": 640.9000000000005,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 6,
       "username": "agus",
       "password": "agus",
+      "nickname": "agus",
       "room": "roomTest1",
       "x": 133,
       "y": 640.9000000000005,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 7,
       "username": "lean",
       "password": "lean",
+      "nickname": "lean",
       "room": "roomTest1",
       "x": 133,
       "y": 640.9000000000005,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 8,
       "username": "wil",
       "password": "wil",
+      "nickname": "wil",
       "room": "roomTest1",
       "x": 133,
       "y": 640.9000000000005,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 9,
       "username": "fer",
       "password": "fer",
+      "nickname": "fer",
       "room": "roomTest1",
       "x": 133,
       "y": 640.9000000000005,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 10,
       "username": "gaston",
       "password": "gaston",
+      "nickname": "gaston",
       "room": "roomTest1",
       "x": 133,
       "y": 640.9000000000005,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     },
     {
       "id": 11,
       "username": "teff",
       "password": "teff",
+      "nickname": "teff",
       "room": "roomTest1",
       "x": 1846,
       "y": 642.3000000000006,
       "level": 1,
       "exp": 0,
       "hp": 100,
-      "maxHp": 100
+      "maxHp": 100,
+      "skinColor": "default",
+      "eyeColor": "default",
+      "role": "user"
     }
   ]
 }
