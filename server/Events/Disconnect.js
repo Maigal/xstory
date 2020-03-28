@@ -9,7 +9,7 @@ module.exports = function(client) {
     const player = state.onlinePlayers.find(ply => ply.cId === client.id);
 
     if (player) {
-      db.get('users').find({username: player.username}).assign({
+      db.get('users').find({nickname: player.nickname}).assign({
         room: player.room,
         x: player.x,
         y: player.y,

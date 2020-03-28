@@ -2,7 +2,7 @@ class Player{
 
   constructor(data){
      this.id = data.id;
-     this.username = data.username;
+     this.nickname = data.nickname;
      this.room = data.room;
      this.x = data.x;
      this.y = data.y;

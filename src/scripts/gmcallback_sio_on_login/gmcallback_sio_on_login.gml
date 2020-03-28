@@ -3,7 +3,7 @@ var data = json_decode(argument0);
 show_debug_message(argument0)
 
 global.userId = data[? "id"];
-global.username = data[? "username"];
+global.nickname = data[? "nickname"];
 global.rm = data[? "room"];
 global.nextRoom = data[? "room"];
 global.x = data[? "x"];

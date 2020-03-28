@@ -19,7 +19,7 @@ module.exports = function(client, player) {
           player = new Player({
             socket: client,
             id: dbUser.id,
-            username: dbUser.username,
+            nickname: dbUser.nickname,
             room: dbUser.room,
             x: dbUser.x,
             y: dbUser.y,

@@ -7,9 +7,10 @@ show_debug_message(data[? "skinColor"])
 
 with(instance_create_depth(data[? "x"], data[? "y"], 0, oPlayerOther)) {	
 	playerId = data[? "id"];
-	username = data[? "username"];
+	nickname = data[? "nickname"];
 	sColor = data[? "skinColor"];
 	eColor = data[? "eyeColor"];
 	role = data[? "role"];
+	level = data[? "level"];
 	event_user(15)
 }
