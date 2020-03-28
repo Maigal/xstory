@@ -24,7 +24,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 draw_text(x+50, y+50, global.level);
 draw_set_font(fName);
-draw_text(x+50, y+80, string((global.xp * 100) / requiredExp[global.level]) + "%");
+draw_text(x+50, y+80, string(round((global.xp * 100) / requiredExp[global.level])) + "%");
 
 
 

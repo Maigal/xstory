@@ -37,7 +37,7 @@ if (state == "attacking") {
 		inst = collision_rectangle(hand[2], hand[3], hand[4], hand[5], oMonster, false, false)
 		if (inst != noone){
 			with(inst) {
-				damageAmount = 10;
+				damageAmount = 10 + (global.level * 2);
 				statusAilment = none;
 				event_user(0) // Trigger user event 0 of oMonster
 			}

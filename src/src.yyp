@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "13e9d11b-2839-4f5a-a7af-541e45943be1",
+            "Value": {
+                "id": "3262e7d4-2fd5-4882-8048-9abcb23b3661",
+                "resourcePath": "objects\\oDamageToMob\\oDamageToMob.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "19d36780-145e-4720-9764-641a3680e4c5",
             "Value": {
                 "id": "758cb23a-2c40-4b77-9ae5-daba538a7a03",
@@ -111,6 +119,14 @@
             }
         },
         {
+            "Key": "2f63da24-c3d5-4256-a4e2-069897dcf06c",
+            "Value": {
+                "id": "6332b93c-a4c6-428f-b89d-78b31486e358",
+                "resourcePath": "views\\2f63da24-c3d5-4256-a4e2-069897dcf06c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "35a75e8a-c0ec-4034-a31d-528dc60d6cef",
             "Value": {
                 "id": "00ab5c7f-c5af-4450-84ad-2afff076707b",
@@ -132,6 +148,14 @@
                 "id": "fe129f35-a488-4ba5-bc4e-ec39c71bb14c",
                 "resourcePath": "objects\\oBox\\oBox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3c0f572b-d579-4bfd-a60f-39ac6faefa7c",
+            "Value": {
+                "id": "af3a2171-1a5b-43cb-ad1a-e2ae910e44b8",
+                "resourcePath": "fonts\\fDamage\\fDamage.yy",
+                "resourceType": "GMFont"
             }
         },
         {
