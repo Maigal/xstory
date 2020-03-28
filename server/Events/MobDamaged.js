@@ -5,6 +5,8 @@ module.exports = function(client) {
 
     const damageData = JSON.parse(data)
 
+    //console.log('dmgData', damageData)
+
     let targetRoomMobs = state.rooms[damageData.room].mobs
 
     targetRoomMobs = targetRoomMobs.map(mob => {
@@ -24,6 +26,8 @@ module.exports = function(client) {
         return mob
       }
     })
+
+    client.to(damageData.room).broadcast.emit('monster_damaged', {mobUID: damageData.UID, damage: damageData.damage});
 
   });
 }

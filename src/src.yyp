@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "12b68205-d78f-400d-b442-7fe196f364bb",
+            "Value": {
+                "id": "13b78c8e-97e6-47fa-b707-76d65648d1b5",
+                "resourcePath": "scripts\\gmcallback_sio_on_player_damaged_other\\gmcallback_sio_on_player_damaged_other.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1318a44b-1ead-47fe-b264-3a4762fcbc5a",
             "Value": {
                 "id": "07409cd9-14b8-4dd6-8016-1323879f1fd4",
@@ -279,6 +287,14 @@
             }
         },
         {
+            "Key": "63d0cb13-c255-4842-a184-29534eb01a79",
+            "Value": {
+                "id": "6a8bb0ec-4da3-44f7-aebd-8c1992d07491",
+                "resourcePath": "scripts\\emit_player_damaged\\emit_player_damaged.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "68ae1950-c400-49a7-a8b9-02964a7a65a9",
             "Value": {
                 "id": "563923be-7c7f-4f38-8626-1d8628896f8b",
@@ -396,6 +412,14 @@
                 "id": "28df0be0-b369-47a8-baeb-0abbf055db6a",
                 "resourcePath": "options\\tvos\\options_tvos.yy",
                 "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
+            "Key": "937e2ecb-a6f6-4678-ae2d-2ae2f113d98e",
+            "Value": {
+                "id": "436db161-319a-45ad-937b-931680a06471",
+                "resourcePath": "scripts\\gmcallback_sio_on_monster_damaged\\gmcallback_sio_on_monster_damaged.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -728,6 +752,7 @@
         "632d1a16-059b-4892-ab18-6d32242dd780",
         "fd6c687c-1214-4367-85cc-f17749e2d3d7",
         "36249dd4-c2c6-4144-ae70-a07cdd942c21",
+        "63d0cb13-c255-4842-a184-29534eb01a79",
         "70f86fba-065c-4118-8766-f523a9944c78",
         "8ae24585-7f81-4009-aed6-4777c3f0cbd0",
         "50531ae2-22e0-48a8-b6c6-213673ece4b1",
@@ -737,6 +762,8 @@
         "3f72701d-adef-4dce-9ca9-2af43fb3931c",
         "42553d04-42e6-42f2-a05f-3031e52cc971",
         "2bae77d1-84b2-4dac-bbb6-b4018757f3f0",
+        "937e2ecb-a6f6-4678-ae2d-2ae2f113d98e",
+        "12b68205-d78f-400d-b442-7fe196f364bb",
         "d192060d-4b13-4f0a-ab5b-dc324ccbfbbb",
         "e9b9b76c-b6a8-4893-9b9e-11db47e3652c"
     ],

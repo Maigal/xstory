@@ -6,6 +6,7 @@ const onJoinRoom = require('./Events/JoinRoom');
 const onTick = require('./Events/Tick');
 const onChat = require('./Events/Chat');
 const onMobDamaged = require('./Events/MobDamaged');
+const onPlayerDamaged = require('./Events/PlayerDamaged');
 const server = require('http').createServer();
 const io = require('socket.io')(server);
 const roomSettings = require('./roomSettings')
@@ -59,6 +60,8 @@ io.on('connection', (client) => {
     onChat(client)
 
     onMobDamaged(client)
+
+    onPlayerDamaged(client)
 
     
     onDisconnect(client);

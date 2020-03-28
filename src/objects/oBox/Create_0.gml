@@ -3,4 +3,5 @@
 
 name = "";
 hp = 100;
-
+damage = 10;
+damage_type = "physical";

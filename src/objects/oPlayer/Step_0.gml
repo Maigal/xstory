@@ -13,7 +13,7 @@ kAttack = !global.uiInteraction && keyboard_check_pressed(vk_control);
 
 // Use input 
 
-if (!global.uiInteraction) {
+if (!global.uiInteraction && state != "attacking") {
 	move = kLeft + kRight;
 } else {
 	move = 0;

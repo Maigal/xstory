@@ -1,15 +1,20 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var hpPercentage = (global.hp * 100) / global.maxHp
+
 
 draw_set_color($333333);
 draw_rectangle(125, 54, 400, 106, true)
 draw_set_alpha(0.5)
 draw_rectangle(125, 55, 400, 105, false)
 draw_set_alpha(1)
-draw_set_color(c_red);
-draw_rectangle(125, 55, 125 + (hpPercentage * 275) / 100, 105, false)
+draw_set_color($2e2e9b);
+draw_rectangle(125, 55, 125 + fakeHp / 100, 105, false)
+draw_set_color($2d2dff);
+draw_rectangle(125, 55, 125 + realHp / 100, 105, false)
+draw_set_color(c_white)
+draw_set_font(fName)
+draw_text(365, 87, string(global.hp) + " / " + string(global.maxHp))
 
 
 

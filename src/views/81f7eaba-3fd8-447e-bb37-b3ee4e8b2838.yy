@@ -10,7 +10,8 @@
         "d838281a-449b-408d-8ca5-6e476629c1aa",
         "632d1a16-059b-4892-ab18-6d32242dd780",
         "fd6c687c-1214-4367-85cc-f17749e2d3d7",
-        "36249dd4-c2c6-4144-ae70-a07cdd942c21"
+        "36249dd4-c2c6-4144-ae70-a07cdd942c21",
+        "63d0cb13-c255-4842-a184-29534eb01a79"
     ],
     "filterType": "GMScript",
     "folderName": "Emit",

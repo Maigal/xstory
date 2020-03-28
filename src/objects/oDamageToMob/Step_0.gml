@@ -5,7 +5,7 @@ if (instance_exists(ob)) {x = ob.x}
 y -= 0.3;
 
 if (opa > 0.05) {
-	opa -= 0.03;
+	opa -= 0.02;
 } else {
 	instance_destroy()
 }
