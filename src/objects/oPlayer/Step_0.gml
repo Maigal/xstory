@@ -8,12 +8,12 @@ var prevState = state;
 // Get input 
 kLeft = -keyboard_check(vk_left); 
 kRight = keyboard_check(vk_right); 
-kJump = !global.uiInteraction && (keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space));
-kAttack = !global.uiInteraction && keyboard_check_pressed(vk_control);
+kJump = !global.interactionBlocked && (keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space));
+kAttack = !global.interactionBlocked && keyboard_check_pressed(vk_control);
 
 // Use input 
 
-if (!global.uiInteraction && state != "attacking") {
+if (!global.interactionBlocked && state != "attacking") {
 	move = kLeft + kRight;
 } else {
 	move = 0;
@@ -26,40 +26,51 @@ if (kAttack) {
 	state = "attacking";
 }
 
-if (state == "attacking") {
-	if (image_index + image_speed >= image_number)
-	{
-	    state = "idle";
-	}
-	if (punch_count > 0) {
-		var inst;
-		var hand = skeleton_get_bounds(0)
-		inst = collision_rectangle(hand[2], hand[3], hand[4], hand[5], oMonster, false, false)
-		if (inst != noone){
-			with(inst) {
-				damageAmount = 10 + (global.level * 2);
-				statusAilment = none;
-				event_user(0) // Trigger user event 0 of oMonster
-			}
-			punch_count -= 1;
-			alarm[0] = 50;
-		}
-	}
+if (global.hp <= 0) {
+	state = "dead"
+}
+
+
+if (state == "dead") {
 	
 } else {
-	if (vsp > 0) {
-		state = "fall";
-	} else if (vsp < 0) {
-		state = "jump";
-	} else {
-		if (move != 0) {
-			state = "run";
-		} else if (move == 0){
-			state = "idle";
+	if (state == "attacking") {
+		if (image_index + image_speed >= image_number)
+		{
+		    state = "idle";
 		}
-	}
+		if (punch_count > 0) {
+			var inst;
+			var hand = skeleton_get_bounds(0)
+			inst = collision_rectangle(hand[2], hand[3], hand[4], hand[5], oMonster, false, false)
+			if (inst != noone){
+				with(inst) {
+					damageAmount = 10 + (global.level * 2);
+					statusAilment = none;
+					event_user(0) // Trigger user event 0 of oMonster
+				}
+				punch_count -= 1;
+				alarm[0] = 50;
+			}
+		}
+	
+	} else {
+		if (vsp > 0) {
+			state = "fall";
+		} else if (vsp < 0) {
+			state = "jump";
+		} else {
+			if (move != 0) {
+				state = "run";
+			} else if (move == 0){
+				state = "idle";
+			}
+		}
 
+	}
 }
+
+
 
 
 if (vsp < 10) { vsp += grav; };
@@ -72,6 +83,13 @@ if (move != 0) {
 
 
 switch (state) {
+	case "dead":
+		if (skeleton_animation_get() != "die"){
+			skeleton_animation_set("die")
+			image_speed = 0.8;
+		}
+		break;
+	
 	case "attacking":
 		if (skeleton_animation_get() != "attack_sword_1"){
 			skeleton_animation_set("attack_sword_1")

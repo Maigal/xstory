@@ -6,11 +6,11 @@
       "password": "b",
       "nickname": "b",
       "room": "roomTest1",
-      "x": 1123,
-      "y": 577.1999999999994,
+      "x": 833,
+      "y": 382.80000000000047,
       "level": 5,
       "exp": 22.000000000000004,
-      "hp": 5,
+      "hp": 100,
       "maxHp": 100,
       "skinColor": {
         "r": 150,
@@ -22,7 +22,8 @@
         "g": 55,
         "b": 255
       },
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 1,
@@ -38,7 +39,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 2,
@@ -46,15 +48,16 @@
       "password": "a",
       "nickname": "a",
       "room": "roomTest1",
-      "x": 727,
-      "y": 449.0999999999997,
+      "x": 1147,
+      "y": 574.8000000000004,
       "level": 3,
       "exp": 14,
-      "hp": 2,
+      "hp": 100,
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 3,
@@ -78,7 +81,8 @@
         "g": 0,
         "b": 0
       },
-      "role": "gm"
+      "role": "gm",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 4,
@@ -94,7 +98,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 5,
@@ -110,7 +115,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 6,
@@ -126,7 +132,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 7,
@@ -142,7 +149,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 8,
@@ -158,7 +166,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 9,
@@ -174,7 +183,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 10,
@@ -190,7 +200,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     },
     {
       "id": 11,
@@ -206,7 +217,8 @@
       "maxHp": 100,
       "skinColor": "default",
       "eyeColor": "default",
-      "role": "user"
+      "role": "user",
+      "lastCheckpointRoom": "roomTest1"
     }
   ]
 }

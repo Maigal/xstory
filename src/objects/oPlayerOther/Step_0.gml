@@ -21,6 +21,9 @@ if (skeleton_animation_get() != animation) {
 
 
 switch(skeleton_animation_get()) {
+	case "die":
+		image_speed = 0.8;
+		break;
 	case "idle":
 		image_speed = 0.5;
 		break;

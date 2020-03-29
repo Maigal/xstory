@@ -7,6 +7,8 @@ module.exports = function(client) {
 
     const tickData = JSON.parse(data);
 
+    //console.log('tickData', tickData)
+
     const player = state.onlinePlayers.find(ply => ply.id === tickData.userId);
     const playerIndex = state.onlinePlayers.findIndex(player => player.id === tickData.userId)
 

@@ -4,18 +4,22 @@
 if (!isVisible) {
 	isVisible = true;
 	keyboard_string = "";
-	global.uiInteraction = true;
+	global.interactionBlocked = true;
 } else if (input != "") {
 	emit_chat(input);
 	global.currentMessage = input;
 	isVisible = false;
 	input = "";
 	keyboard_string = "";
-	global.uiInteraction = false;
+	if (oPlayer.state != "dead") {
+		global.interactionBlocked = false;
+	}
 	with(oPlayer) {
 		event_user(0)
 	}
 } else {
 	isVisible = false;
-	global.uiInteraction = false;
+	if (oPlayer.state != "dead") {
+		global.interactionBlocked = false;
+	}
 }
