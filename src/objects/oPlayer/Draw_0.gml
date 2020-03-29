@@ -13,6 +13,6 @@ if (currentMessage != "") {
 //draw_text(x, y - 110, vsp);
 //draw_text(x, y - 130, state);
 //draw_text(x, y - 150, skeleton_animation_get());
-draw_text(x, y - 150, image_index);
+//draw_text(x, y - 150, image_index);
 
 

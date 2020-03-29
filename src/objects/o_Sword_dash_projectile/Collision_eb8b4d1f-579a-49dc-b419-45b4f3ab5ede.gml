@@ -1,4 +1,3 @@
 /// @description 
 
-ds_map_destroy(mobsHit)
-instance_destroy()
+event_user(0)

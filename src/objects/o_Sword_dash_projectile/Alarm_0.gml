@@ -1,3 +1,3 @@
-/// @description Destroy self
+/// @description Turn on opacity downgrade
 
 opa = true;

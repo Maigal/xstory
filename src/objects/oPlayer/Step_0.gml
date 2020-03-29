@@ -44,10 +44,11 @@ if (state == "dead") {
 	if (state == "skill") {
 		switch (currentSkill) {
 			case "sword_dash":
-				if (image_index > 7 && projectileCount > 0) {
-					var sword_dash_projectile = instance_create_depth(x+(35*image_xscale),y-40,0, o_Sword_dash_projectile)
+				if (image_index > 7 && skeleton_animation_get() =="sword_skill_sword_dash" && projectileCount > 0) {
+					var sword_dash_projectile = instance_create_depth(x+(25*image_xscale),y-20,0, o_Sword_dash_projectile)
 					with (sword_dash_projectile) {
 						isReal = true;
+						damageAmount = 10 + (global.level * 2);
 						dir = other.image_xscale;
 					}
 					projectileCount -= 1;

@@ -19,3 +19,4 @@ animation = "idle";
 currentMessage = "";
 usernameTag = "";
 
+projectileCount = 1;
