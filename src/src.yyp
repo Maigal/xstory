@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "16ebafff-7d80-4167-9001-cc2da73ccc58",
+            "Value": {
+                "id": "87562901-890b-410b-9718-741e8df3eca5",
+                "resourcePath": "views\\16ebafff-7d80-4167-9001-cc2da73ccc58.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "19d36780-145e-4720-9764-641a3680e4c5",
             "Value": {
                 "id": "758cb23a-2c40-4b77-9ae5-daba538a7a03",
@@ -131,6 +139,14 @@
             "Value": {
                 "id": "6332b93c-a4c6-428f-b89d-78b31486e358",
                 "resourcePath": "views\\2f63da24-c3d5-4256-a4e2-069897dcf06c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2f8ac6a8-3b57-486b-a3df-3cef320d783f",
+            "Value": {
+                "id": "84cca3d7-e047-406c-b7a7-051d03342feb",
+                "resourcePath": "views\\2f8ac6a8-3b57-486b-a3df-3cef320d783f.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -271,6 +287,14 @@
             }
         },
         {
+            "Key": "5456a08f-8fe1-42ea-bc3f-33cb9c7e795e",
+            "Value": {
+                "id": "b75ca145-8a61-4332-afa5-aa544df7b6c2",
+                "resourcePath": "objects\\o_Sword_dash_projectile\\o_Sword_dash_projectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5ebd4cf4-97c9-41ea-9419-6843d928ba45",
             "Value": {
                 "id": "d4d832ab-85df-4f54-881f-34d4a02eba98",
@@ -340,6 +364,14 @@
                 "id": "649713e7-f984-436c-94c3-a8b1bb004927",
                 "resourcePath": "options\\html5\\options_html5.yy",
                 "resourceType": "GMHtml5Options"
+            }
+        },
+        {
+            "Key": "76d8b054-1cab-457b-986d-17bebc8909ee",
+            "Value": {
+                "id": "172d0e1b-fce2-4396-b47e-f2acab4098fd",
+                "resourcePath": "sprites\\sword_dash\\sword_dash.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -676,6 +708,14 @@
                 "id": "03a81c8f-2329-462b-92a9-e3e28d673a5a",
                 "resourcePath": "scripts\\emit_status\\emit_status.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "edab7add-5d4e-4539-bec3-7b8a5c9946c0",
+            "Value": {
+                "id": "bc7d317a-934f-40ec-a56c-6215335ebbd7",
+                "resourcePath": "views\\edab7add-5d4e-4539-bec3-7b8a5c9946c0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

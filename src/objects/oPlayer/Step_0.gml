@@ -8,12 +8,13 @@ var prevState = state;
 // Get input 
 kLeft = -keyboard_check(vk_left); 
 kRight = keyboard_check(vk_right); 
-kJump = !global.interactionBlocked && (keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space));
+kJump = !global.interactionBlocked && state != "skill" && (keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_space));
 kAttack = !global.interactionBlocked && keyboard_check_pressed(vk_control);
+kSkill1 = !global.interactionBlocked && state != "skill" && keyboard_check_pressed(vk_shift);
 
 // Use input 
 
-if (!global.interactionBlocked && state != "attacking") {
+if (!global.interactionBlocked && state != "attacking" && state != "skill") {
 	move = kLeft + kRight;
 } else {
 	move = 0;
@@ -26,6 +27,12 @@ if (kAttack) {
 	state = "attacking";
 }
 
+if (kSkill1) {
+	state = "skill";
+	currentSkill = "sword_dash";
+	projectileCount = 1;
+}
+
 if (global.hp <= 0) {
 	state = "dead"
 }
@@ -34,9 +41,29 @@ if (global.hp <= 0) {
 if (state == "dead") {
 	
 } else {
-	if (state == "attacking") {
-		if (image_index + image_speed >= image_number)
-		{
+	if (state == "skill") {
+		switch (currentSkill) {
+			case "sword_dash":
+				if (image_index > 7 && projectileCount > 0) {
+					var sword_dash_projectile = instance_create_depth(x+(35*image_xscale),y-40,0, o_Sword_dash_projectile)
+					with (sword_dash_projectile) {
+						isReal = true;
+						dir = other.image_xscale;
+					}
+					projectileCount -= 1;
+					
+				}
+				if (image_index + image_speed >= image_number) {
+			    state = "idle";
+			}
+				break;
+				
+			default:
+				break;
+		}
+	}
+	else if (state == "attacking") {
+		if (image_index + image_speed >= image_number){
 		    state = "idle";
 		}
 		if (punch_count > 0) {
@@ -83,6 +110,14 @@ if (move != 0) {
 
 
 switch (state) {
+	case "skill":
+		if (skeleton_animation_get() != "sword_skill_sword_dash"){
+			skeleton_animation_set("sword_skill_sword_dash")
+			image_speed = 1.2;
+		}
+		hsp += ((image_index - 3) / 2) * image_xscale;
+		break;
+		
 	case "dead":
 		if (skeleton_animation_get() != "die"){
 			skeleton_animation_set("die")
